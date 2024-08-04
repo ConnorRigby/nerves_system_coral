@@ -98,10 +98,14 @@ defmodule NervesSystemIotGateIMX8Plus.MixProject do
       "LICENSE",
       "README.md",
       "VERSION",
+      "fwup-ops.conf",
       "fwup.conf",
       "fwup_include",
       "mix.exs",
       "nerves_defconfig",
+      "post-build.sh",
+      "post-createfs.sh",
+      "rootfs_overlay",
       "uboot"
     ]
   end

@@ -19,7 +19,7 @@ define HOST_COMPULAB_PRE_BUILD_HOOK
 	$(MAKE) host-compulab -C $(BASE_DIR)
 endef
 
-define HOST_COMPULAB_POST_BUILD_HOOK
+define HOST_COMPULAB_POST_INSTALL_HOOK
 	$(HOST_COMPULAB_DIR)/scripts/imx8-bootloader-prepare.sh \
 		"unused" $(UBOOT_DIR)/arch/arm/dts/iot-gate-imx8plus.dtb
 endef
