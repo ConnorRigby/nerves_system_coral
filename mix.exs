@@ -101,6 +101,7 @@ defmodule NervesSystemIotGateIMX8Plus.MixProject do
       "fwup-ops.conf",
       "fwup.conf",
       "fwup_include",
+      "linux",
       "mix.exs",
       "nerves_defconfig",
       "post-build.sh",
