@@ -98,6 +98,7 @@ defmodule NervesSystemIotGateIMX8Plus.MixProject do
       "LICENSE",
       "README.md",
       "VERSION",
+      "assets/images",
       "fwup-ops.conf",
       "fwup.conf",
       "fwup_include",
