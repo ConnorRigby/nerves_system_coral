@@ -87,6 +87,7 @@ defmodule NervesSystemIotGateIMX8Plus.MixProject do
   defp package do
     [
       files: package_files(),
+      licenses: ["Apache-2.0"],
       links: %{"GitHub" => @source_url}
     ]
   end
@@ -94,12 +95,20 @@ defmodule NervesSystemIotGateIMX8Plus.MixProject do
   defp package_files do
     [
       "CHANGELOG.md",
+      "LICENSE",
       "README.md",
       "VERSION",
+      "assets/images",
+      "fwup-ops.conf",
       "fwup.conf",
       "fwup_include",
+      "linux",
       "mix.exs",
-      "nerves_defconfig"
+      "nerves_defconfig",
+      "post-build.sh",
+      "post-createfs.sh",
+      "rootfs_overlay",
+      "uboot"
     ]
   end
 
