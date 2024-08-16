@@ -1,6 +1,6 @@
 # Changelog
 
-# v0.1.0
+## v0.1.0
 
 Preliminary release that boots Nerves. Peripherals have not been validated.
 
