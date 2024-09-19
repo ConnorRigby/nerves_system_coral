@@ -1,10 +1,10 @@
-# Compulab IOT-GATE-IMX8PLUS
+# Google Coral Devboard
 
 This is the base Nerves System configuration for the
-[Compulab IOT-GATE-IMX8PLUS](https://www.compulab.com/products/iot-gateways/iot-gate-imx8plus-industrial-arm-iot-gateway).
+[Google Coral Devboard](https://coral.ai/products/dev-board).
 
-![IOT-GATE](assets/images/iot-gate.jpg)
-<br><sup>[Image credit](#compulab)</sup>
+![Google Coral Devboard](assets/images/google-coral-devboard.png)
+<br><sup>[Image credit](#google)</sup>
 
 | Feature        | Description                                                 |
 | -------------- | ----------------------------------------------------------- |
@@ -22,38 +22,5 @@ This is the base Nerves System configuration for the
 | RTC            | Yes                                                         |
 | HW Watchdog    | Yes                                                         |
 
-[Image credit](#compulab): This image is from
-[compulab.com](https://www.compulab.com/products/iot-gateways/iot-gate-imx8plus-industrial-arm-iot-gateway).
-
-### Getting started
-
-The IOT-GATE-IMX8PLUS gateway expects the bootloader to be located on hardware BOOT partition 1. When flashing firmware, ensure that both the bootloader and a complete disk image, generated using the fwup CLI tool, are provided.
-
-#### Prerequisites
-
-- [NXP mfgtools](https://github.com/nxp-imx/mfgtools)
-- [fwup](https://github.com/fwup-home/fwup)
-
-#### Building a firmware image
-
-```
-fwup -a \
-  -d $FW_PROJECT_DIR/_build/$TARGET/nerves/images/firmware.img \
-  -i $FW_PROJECT_DIR/_build/$TARGET/nerves/images/firmware.fw  \
-  -t complete
-```
-
-#### Flashing the firmware image
-
-```
-uuu \
-  -b emmc_all \
-  $BINARIES_DIR/imx8-boot-sd.bin \
-  $FW_PROJECT_DIR/_build/$TARGET/nerves/images/firmware.img
-```
-
-#### Flashing only U-Boot
-
-```
-uuu -b emmc $BINARIES_DIR/imx8-boot-sd.bin
-```
+[Image credit](#google): This image is from
+[coral.ai](https://coral.ai/products/dev-board).

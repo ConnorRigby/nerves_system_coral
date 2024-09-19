@@ -1,8 +1,8 @@
-defmodule NervesSystemIotGateIMX8Plus.MixProject do
+defmodule NervesSystemCoral.MixProject do
   use Mix.Project
 
-  @github_organization "redwirelabs"
-  @app :nerves_system_iot_gate_imx8plus
+  @github_organization "connorrigby"
+  @app :nerves_system_coral
   @source_url "https://github.com/#{@github_organization}/#{@app}"
   @version Path.join(__DIR__, "VERSION")
            |> File.read!()
@@ -70,7 +70,7 @@ defmodule NervesSystemIotGateIMX8Plus.MixProject do
   end
 
   defp description do
-    "Nerves System - Compulab IoT Gate IMX8Plus"
+    "Nerves System - Google Coral Dev Board"
   end
 
   defp docs do
